@@ -1,14 +1,24 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <meta charset="utf-8">
+    <title>AngularVtkItkCustomWebpack</title>
+    <base href="/">
+
+    <!-- egyszerű workaround, hogy a vtk.js a számára szükséges módon hozzáférjen egy global változóhoz -->
+    <script>
+        if (global === undefined) {
+            var global = window;
+        }
+    </script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
-</head>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" href="styles.3ff695c00d717f2d2a11.css"></head>
+
 <body>
-    
-</body>
+    <app-root></app-root>
+<script type="text/javascript" src="runtime.26209474bfa8dc87a77c.js"></script><script type="text/javascript" src="es2015-polyfills.822f73dcbee0e9da955c.js" nomodule></script><script type="text/javascript" src="polyfills.2b767098c09ef2304dbf.js"></script><script type="text/javascript" src="main.396ea7cfe961e2de42c8.js"></script></body>
+
 </html>
